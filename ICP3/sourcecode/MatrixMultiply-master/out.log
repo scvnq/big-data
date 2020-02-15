@@ -1,0 +1,328 @@
+18:41:09,395  WARN main NativeCodeLoader:<clinit>:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18:41:09,584  INFO main deprecation:warnOnceIfDeprecated:840 - session.id is deprecated. Instead, use dfs.metrics.session-id
+18:41:09,584  INFO main JvmMetrics:init:76 - Initializing JVM Metrics with processName=JobTracker, sessionId=
+18:41:10,067  WARN main JobSubmitter:copyAndConfigureFiles:149 - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+18:41:10,074  WARN main JobSubmitter:copyAndConfigureFiles:258 - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+18:41:10,100  INFO main FileInputFormat:listStatus:287 - Total input paths to process : 2
+18:41:10,141  INFO main JobSubmitter:submitJobInternal:394 - number of splits:2
+18:41:10,164  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.job.name is deprecated. Instead, use mapreduce.job.name
+18:41:10,165  INFO main deprecation:warnOnceIfDeprecated:840 - mapreduce.map.class is deprecated. Instead, use mapreduce.job.map.class
+18:41:10,165  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.input.dir is deprecated. Instead, use mapreduce.input.fileinputformat.inputdir
+18:41:10,165  INFO main deprecation:warnOnceIfDeprecated:840 - mapreduce.reduce.class is deprecated. Instead, use mapreduce.job.reduce.class
+18:41:10,165  INFO main deprecation:warnOnceIfDeprecated:840 - mapreduce.inputformat.class is deprecated. Instead, use mapreduce.job.inputformat.class
+18:41:10,166  INFO main deprecation:warnOnceIfDeprecated:840 - mapreduce.outputformat.class is deprecated. Instead, use mapreduce.job.outputformat.class
+18:41:10,166  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.output.value.class is deprecated. Instead, use mapreduce.job.output.value.class
+18:41:10,166  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+18:41:10,166  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.working.dir is deprecated. Instead, use mapreduce.job.working.dir
+18:41:10,167  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+18:41:10,167  INFO main deprecation:warnOnceIfDeprecated:840 - user.name is deprecated. Instead, use mapreduce.job.user.name
+18:41:10,168  INFO main deprecation:warnOnceIfDeprecated:840 - mapred.output.key.class is deprecated. Instead, use mapreduce.job.output.key.class
+18:41:10,241  INFO main JobSubmitter:printTokens:477 - Submitting tokens for job: job_local17787423_0001
+18:41:10,271  WARN main Configuration:loadProperty:2172 - file:/tmp/hadoop-suannai/mapred/staging/suannai17787423/.staging/job_local17787423_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+18:41:10,271  WARN main Configuration:loadProperty:2172 - file:/tmp/hadoop-suannai/mapred/staging/suannai17787423/.staging/job_local17787423_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+18:41:10,346  WARN main Configuration:loadProperty:2172 - file:/tmp/hadoop-suannai/mapred/local/localRunner/suannai/job_local17787423_0001/job_local17787423_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+18:41:10,346  WARN main Configuration:loadProperty:2172 - file:/tmp/hadoop-suannai/mapred/local/localRunner/suannai/job_local17787423_0001/job_local17787423_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+18:41:10,351  INFO main Job:submit:1272 - The url to track the job: http://localhost:8080/
+18:41:10,352  INFO main Job:monitorAndPrintJob:1317 - Running job: job_local17787423_0001
+18:41:10,353  INFO Thread-12 LocalJobRunner:createOutputCommitter:323 - OutputCommitter set in config null
+18:41:10,357  INFO Thread-12 LocalJobRunner:createOutputCommitter:341 - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+18:41:10,385  INFO Thread-12 LocalJobRunner:run:389 - Waiting for map tasks
+18:41:10,385  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:run:216 - Starting task: attempt_local17787423_0001_m_000000_0
+18:41:10,407  INFO LocalJobRunner Map Task Executor #0 ProcfsBasedProcessTree:isAvailable:129 - ProcfsBasedProcessTree currently is supported only on Linux.
+18:41:10,407  INFO LocalJobRunner Map Task Executor #0 Task:initialize:581 -  Using ResourceCalculatorProcessTree : null
+18:41:10,410  INFO LocalJobRunner Map Task Executor #0 MapTask:runNewMapper:732 - Processing split: file:/Users/suannai/Desktop/MatrixMultiply-master/input/M:0+306630
+18:41:10,416  INFO LocalJobRunner Map Task Executor #0 MapTask:createSortingCollector:387 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+18:41:10,477  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 0 kvi 26214396(104857584)
+18:41:10,477  INFO LocalJobRunner Map Task Executor #0 MapTask:init:975 - mapreduce.task.io.sort.mb: 100
+18:41:10,477  INFO LocalJobRunner Map Task Executor #0 MapTask:init:976 - soft limit at 83886080
+18:41:10,477  INFO LocalJobRunner Map Task Executor #0 MapTask:init:977 - bufstart = 0; bufvoid = 104857600
+18:41:10,477  INFO LocalJobRunner Map Task Executor #0 MapTask:init:978 - kvstart = 26214396; length = 6553600
+18:41:11,357  INFO main Job:monitorAndPrintJob:1338 - Job job_local17787423_0001 running in uber mode : false
+18:41:11,359  INFO main Job:monitorAndPrintJob:1345 -  map 0% reduce 0%
+18:41:11,753  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:11,753  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 0; bufend = 39175318; bufvoid = 104857600
+18:41:11,753  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 26214396(104857584); kvend = 15036708(60146832); length = 11177689/6553600
+18:41:11,753  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 49661067 kvi 12415260(49661040)
+18:41:15,047  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 0
+18:41:15,048  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 49661067 kv 12415260(49661040) kvi 9793836(39175344)
+18:41:15,868  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:15,868  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 49661067; bufend = 90404399; bufvoid = 104857600
+18:41:15,868  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 12415260(49661040); kvend = 1629580(6518320); length = 10785681/6553600
+18:41:15,868  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 100890151 kvi 25222532(100890128)
+18:41:16,419  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:17,388  INFO main Job:monitorAndPrintJob:1345 -  map 7% reduce 0%
+18:41:19,424  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:19,841  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 1
+18:41:19,841  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 100890151 kv 25222532(100890128) kvi 22601104(90404416)
+18:41:20,586  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:20,587  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 100890151; bufend = 36786239; bufvoid = 104857596
+18:41:20,587  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 25222532(100890128); kvend = 14439436(57757744); length = 10783097/6553600
+18:41:20,587  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 47271983 kvi 11817988(47271952)
+18:41:22,429  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:23,411  INFO main Job:monitorAndPrintJob:1345 -  map 10% reduce 0%
+18:41:24,429  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 2
+18:41:24,430  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 47271983 kv 11817988(47271952) kvi 9196564(36786256)
+18:41:25,168  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:25,168  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 47271983; bufend = 88057851; bufvoid = 104857600
+18:41:25,168  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 11817988(47271952); kvend = 1042940(4171760); length = 10775049/6553600
+18:41:25,168  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 98543597 kvi 24635892(98543568)
+18:41:25,435  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:26,426  INFO main Job:monitorAndPrintJob:1345 -  map 13% reduce 0%
+18:41:28,440  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:29,438  INFO main Job:monitorAndPrintJob:1345 -  map 14% reduce 0%
+18:41:29,540  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 3
+18:41:29,541  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 98543597 kv 24635892(98543568) kvi 22014468(88057872)
+18:41:30,199  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:30,200  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 98543597; bufend = 34436055; bufvoid = 104857600
+18:41:30,200  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 24635892(98543568); kvend = 13851896(55407584); length = 10783997/6553600
+18:41:30,200  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 44921811 kvi 11230448(44921792)
+18:41:31,444  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:32,448  INFO main Job:monitorAndPrintJob:1345 -  map 17% reduce 0%
+18:41:34,439  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 4
+18:41:34,439  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 44921811 kv 11230448(44921792) kvi 8609020(34436080)
+18:41:34,448  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:35,164  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:35,164  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 44921811; bufend = 85695926; bufvoid = 104857600
+18:41:35,164  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 11230448(44921792); kvend = 452464(1809856); length = 10777985/6553600
+18:41:35,164  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 96181683 kvi 24045416(96181664)
+18:41:37,453  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:37,468  INFO main Job:monitorAndPrintJob:1345 -  map 20% reduce 0%
+18:41:39,510  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 5
+18:41:39,511  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 96181683 kv 24045416(96181664) kvi 21423988(85695952)
+18:41:40,153  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:40,153  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 96181683; bufend = 32093335; bufvoid = 104857593
+18:41:40,153  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 24045416(96181664); kvend = 13266216(53064864); length = 10779201/6553600
+18:41:40,153  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 42579091 kvi 10644768(42579072)
+18:41:40,456  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:40,481  INFO main Job:monitorAndPrintJob:1345 -  map 23% reduce 0%
+18:41:43,461  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:43,490  INFO main Job:monitorAndPrintJob:1345 -  map 24% reduce 0%
+18:41:44,527  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 6
+18:41:44,528  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 42579091 kv 10644768(42579072) kvi 8023340(32093360)
+18:41:45,179  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:45,179  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 42579091; bufend = 83331586; bufvoid = 104857600
+18:41:45,179  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 10644768(42579072); kvend = 26075776(104303104); length = 10783393/6553600
+18:41:45,179  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 93817337 kvi 23454328(93817312)
+18:41:46,466  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:46,503  INFO main Job:monitorAndPrintJob:1345 -  map 27% reduce 0%
+18:41:49,334  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 7
+18:41:49,335  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 93817337 kv 23454328(93817312) kvi 20832904(83331616)
+18:41:49,472  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:49,973  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:49,974  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 93817337; bufend = 29702762; bufvoid = 104857600
+18:41:49,974  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 23454328(93817312); kvend = 12668568(50674272); length = 10785761/6553600
+18:41:49,974  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 40188509 kvi 10047120(40188480)
+18:41:52,477  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:41:52,526  INFO main Job:monitorAndPrintJob:1345 -  map 30% reduce 0%
+18:41:54,130  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 8
+18:41:54,130  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 40188509 kv 10047120(40188480) kvi 7425696(29702784)
+18:41:54,768  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:41:54,769  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 40188509; bufend = 80946757; bufvoid = 104857600
+18:41:54,769  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 10047120(40188480); kvend = 25479572(101918288); length = 10781949/6553600
+18:41:54,769  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 91432514 kvi 22858124(91432496)
+18:41:55,076  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:statusUpdate:513 - map > map
+18:41:55,076  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1440 - Starting flush of map output
+18:41:55,483  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort
+18:41:55,539  INFO main Job:monitorAndPrintJob:1345 -  map 33% reduce 0%
+18:41:58,487  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort
+18:41:58,577  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 9
+18:41:58,577  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 91432514 kv 22858124(91432496) kvi 20771956(83087824)
+18:41:58,578  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1459 - Spilling map output
+18:41:58,578  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1460 - bufstart = 91432514; bufend = 99323876; bufvoid = 104857600
+18:41:58,578  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1462 - kvstart = 22858124(91432496); kvend = 20771960(83087840); length = 2086165/6553600
+18:41:59,166  INFO LocalJobRunner Map Task Executor #0 MapTask:sortAndSpill:1648 - Finished spill 10
+18:41:59,173  INFO LocalJobRunner Map Task Executor #0 Merger:merge:568 - Merging 11 sorted segments
+18:41:59,185  INFO LocalJobRunner Map Task Executor #0 Merger:merge:672 - Merging 2 intermediate segments out of a total of 11
+18:42:00,347  INFO LocalJobRunner Map Task Executor #0 Merger:merge:667 - Down to the last merge-pass, with 10 segments left of total size: 469046748 bytes
+18:42:01,492  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:01,566  INFO main Job:monitorAndPrintJob:1345 -  map 37% reduce 0%
+18:42:04,496  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:04,577  INFO main Job:monitorAndPrintJob:1345 -  map 41% reduce 0%
+18:42:07,498  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:07,588  INFO main Job:monitorAndPrintJob:1345 -  map 45% reduce 0%
+18:42:10,503  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:10,597  INFO main Job:monitorAndPrintJob:1345 -  map 50% reduce 0%
+18:42:10,778  INFO LocalJobRunner Map Task Executor #0 Task:done:995 - Task:attempt_local17787423_0001_m_000000_0 is done. And is in the process of committing
+18:42:10,779  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:statusUpdate:513 - map > sort
+18:42:10,779  INFO LocalJobRunner Map Task Executor #0 Task:sendDone:1115 - Task 'attempt_local17787423_0001_m_000000_0' done.
+18:42:10,780  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:run:241 - Finishing task: attempt_local17787423_0001_m_000000_0
+18:42:10,780  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:run:216 - Starting task: attempt_local17787423_0001_m_000001_0
+18:42:10,781  INFO LocalJobRunner Map Task Executor #0 ProcfsBasedProcessTree:isAvailable:129 - ProcfsBasedProcessTree currently is supported only on Linux.
+18:42:10,781  INFO LocalJobRunner Map Task Executor #0 Task:initialize:581 -  Using ResourceCalculatorProcessTree : null
+18:42:10,783  INFO LocalJobRunner Map Task Executor #0 MapTask:runNewMapper:732 - Processing split: file:/Users/suannai/Desktop/MatrixMultiply-master/input/N:0+303465
+18:42:10,783  INFO LocalJobRunner Map Task Executor #0 MapTask:createSortingCollector:387 - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+18:42:10,795  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 0 kvi 26214396(104857584)
+18:42:10,795  INFO LocalJobRunner Map Task Executor #0 MapTask:init:975 - mapreduce.task.io.sort.mb: 100
+18:42:10,795  INFO LocalJobRunner Map Task Executor #0 MapTask:init:976 - soft limit at 83886080
+18:42:10,795  INFO LocalJobRunner Map Task Executor #0 MapTask:init:977 - bufstart = 0; bufvoid = 104857600
+18:42:10,795  INFO LocalJobRunner Map Task Executor #0 MapTask:init:978 - kvstart = 26214396; length = 6553600
+18:42:11,601  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 0%
+18:42:11,666  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:11,666  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 0; bufend = 39329470; bufvoid = 104857600
+18:42:11,666  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 26214396(104857584); kvend = 15075248(60300992); length = 11139149/6553600
+18:42:11,666  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 49815223 kvi 12453800(49815200)
+18:42:15,227  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 0
+18:42:15,228  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 49815223 kv 12453800(49815200) kvi 9832372(39329488)
+18:42:15,702  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:15,702  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 49815223; bufend = 90590929; bufvoid = 104857600
+18:42:15,702  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 12453800(49815200); kvend = 1676212(6704848); length = 10777589/6553600
+18:42:15,702  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 101076680 kvi 25269164(101076656)
+18:42:16,791  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:17,625  INFO main Job:monitorAndPrintJob:1345 -  map 57% reduce 0%
+18:42:19,232  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 1
+18:42:19,233  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 101076680 kv 25269164(101076656) kvi 22647740(90590960)
+18:42:19,746  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:19,747  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 101076680; bufend = 36959832; bufvoid = 104857600
+18:42:19,747  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 25269164(101076656); kvend = 14482840(57931360); length = 10786325/6553600
+18:42:19,747  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 47445588 kvi 11861392(47445568)
+18:42:19,795  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:20,636  INFO main Job:monitorAndPrintJob:1345 -  map 60% reduce 0%
+18:42:22,800  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:23,298  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 2
+18:42:23,299  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 47445588 kv 11861392(47445568) kvi 9239964(36959856)
+18:42:23,645  INFO main Job:monitorAndPrintJob:1345 -  map 61% reduce 0%
+18:42:23,790  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:23,790  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 47445588; bufend = 88198040; bufvoid = 104857600
+18:42:23,790  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 11861392(47445568); kvend = 1077988(4311952); length = 10783405/6553600
+18:42:23,790  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 98683788 kvi 24670940(98683760)
+18:42:25,804  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:26,652  INFO main Job:monitorAndPrintJob:1345 -  map 64% reduce 0%
+18:42:27,764  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 3
+18:42:27,765  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 98683788 kv 24670940(98683760) kvi 22049516(88198064)
+18:42:28,309  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:28,310  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 98683788; bufend = 34555228; bufvoid = 104857600
+18:42:28,310  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 24670940(98683760); kvend = 13881688(55526752); length = 10789253/6553600
+18:42:28,310  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 45040982 kvi 11260240(45040960)
+18:42:28,809  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:29,662  INFO main Job:monitorAndPrintJob:1345 -  map 67% reduce 0%
+18:42:31,811  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:31,852  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 4
+18:42:31,852  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 45040982 kv 11260240(45040960) kvi 8638812(34555248)
+18:42:32,351  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:32,351  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 45040982; bufend = 85802592; bufvoid = 104857600
+18:42:32,351  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 11260240(45040960); kvend = 479132(1916528); length = 10781109/6553600
+18:42:32,351  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 96288352 kvi 24072084(96288336)
+18:42:34,816  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:35,686  INFO main Job:monitorAndPrintJob:1345 -  map 71% reduce 0%
+18:42:35,876  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 5
+18:42:35,876  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 96288352 kv 24072084(96288336) kvi 21450652(85802608)
+18:42:36,346  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:36,346  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 96288352; bufend = 32187272; bufvoid = 104857600
+18:42:36,346  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 24072084(96288336); kvend = 13289696(53158784); length = 10782389/6553600
+18:42:36,346  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 42673020 kvi 10668248(42672992)
+18:42:37,819  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:38,697  INFO main Job:monitorAndPrintJob:1345 -  map 74% reduce 0%
+18:42:39,864  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 6
+18:42:39,865  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 42673020 kv 10668248(42672992) kvi 8046824(32187296)
+18:42:40,338  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:40,339  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 42673020; bufend = 83392205; bufvoid = 104857600
+18:42:40,339  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 10668248(42672992); kvend = 26090928(104363712); length = 10791721/6553600
+18:42:40,339  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 93877950 kvi 23469480(93877920)
+18:42:40,825  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:41,711  INFO main Job:monitorAndPrintJob:1345 -  map 77% reduce 0%
+18:42:43,829  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:43,940  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 7
+18:42:43,940  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 93877950 kv 23469480(93877920) kvi 20848056(83392224)
+18:42:44,413  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:44,413  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 93877950; bufend = 29790790; bufvoid = 104857600
+18:42:44,413  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 23469480(93877920); kvend = 12690580(50762320); length = 10778901/6553600
+18:42:44,413  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 40276547 kvi 10069132(40276528)
+18:42:46,834  INFO communication thread LocalJobRunner:statusUpdate:513 - map > map
+18:42:47,738  INFO main Job:monitorAndPrintJob:1345 -  map 81% reduce 0%
+18:42:47,925  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 8
+18:42:47,925  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 40276547 kv 10069132(40276528) kvi 7447704(29790816)
+18:42:48,402  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1550 - Spilling map output
+18:42:48,402  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1551 - bufstart = 40276547; bufend = 81016432; bufvoid = 104857600
+18:42:48,402  INFO LocalJobRunner Map Task Executor #0 MapTask:startSpill:1553 - kvstart = 10069132(40276528); kvend = 25496988(101987952); length = 10786545/6553600
+18:42:48,402  INFO LocalJobRunner Map Task Executor #0 MapTask:setEquator:1183 - (EQUATOR) 91502184 kvi 22875540(91502160)
+18:42:48,469  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:statusUpdate:513 - map > map
+18:42:48,469  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1440 - Starting flush of map output
+18:42:49,834  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort
+18:42:50,748  INFO main Job:monitorAndPrintJob:1345 -  map 83% reduce 0%
+18:42:51,837  INFO SpillThread MapTask:sortAndSpill:1648 - Finished spill 9
+18:42:51,837  INFO LocalJobRunner Map Task Executor #0 MapTask:resetSpill:1201 - (RESET) equator 91502184 kv 22875540(91502160) kvi 21951956(87807824)
+18:42:51,837  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1459 - Spilling map output
+18:42:51,837  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1460 - bufstart = 91502184; bufend = 95011324; bufvoid = 104857600
+18:42:51,838  INFO LocalJobRunner Map Task Executor #0 MapTask:flush:1462 - kvstart = 22875540(91502160); kvend = 21951960(87807840); length = 923581/6553600
+18:42:52,082  INFO LocalJobRunner Map Task Executor #0 MapTask:sortAndSpill:1648 - Finished spill 10
+18:42:52,085  INFO LocalJobRunner Map Task Executor #0 Merger:merge:568 - Merging 11 sorted segments
+18:42:52,086  INFO LocalJobRunner Map Task Executor #0 Merger:merge:672 - Merging 2 intermediate segments out of a total of 11
+18:42:52,839  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:53,284  INFO LocalJobRunner Map Task Executor #0 Merger:merge:667 - Down to the last merge-pass, with 10 segments left of total size: 464144216 bytes
+18:42:53,763  INFO main Job:monitorAndPrintJob:1345 -  map 84% reduce 0%
+18:42:55,844  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:56,776  INFO main Job:monitorAndPrintJob:1345 -  map 88% reduce 0%
+18:42:58,848  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:42:59,788  INFO main Job:monitorAndPrintJob:1345 -  map 92% reduce 0%
+18:43:01,851  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:43:02,798  INFO main Job:monitorAndPrintJob:1345 -  map 96% reduce 0%
+18:43:04,856  INFO communication thread LocalJobRunner:statusUpdate:513 - map > sort > 
+18:43:05,031  INFO LocalJobRunner Map Task Executor #0 Task:done:995 - Task:attempt_local17787423_0001_m_000001_0 is done. And is in the process of committing
+18:43:05,032  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:statusUpdate:513 - map > sort
+18:43:05,032  INFO LocalJobRunner Map Task Executor #0 Task:sendDone:1115 - Task 'attempt_local17787423_0001_m_000001_0' done.
+18:43:05,032  INFO LocalJobRunner Map Task Executor #0 LocalJobRunner:run:241 - Finishing task: attempt_local17787423_0001_m_000001_0
+18:43:05,032  INFO Thread-12 LocalJobRunner:run:397 - Map task executor complete.
+18:43:05,041  INFO Thread-12 ProcfsBasedProcessTree:isAvailable:129 - ProcfsBasedProcessTree currently is supported only on Linux.
+18:43:05,041  INFO Thread-12 Task:initialize:581 -  Using ResourceCalculatorProcessTree : null
+18:43:05,042  INFO Thread-12 Merger:merge:568 - Merging 2 sorted segments
+18:43:05,043  INFO Thread-12 Merger:merge:667 - Down to the last merge-pass, with 2 segments left of total size: 933190950 bytes
+18:43:05,043  INFO Thread-12 LocalJobRunner:statusUpdate:513 - 
+18:43:05,053  INFO Thread-12 deprecation:warnOnceIfDeprecated:840 - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+18:43:05,811  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 0%
+18:43:11,051  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:11,837  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 73%
+18:43:14,054  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:14,849  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 76%
+18:43:17,059  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:17,863  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 78%
+18:43:20,060  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:20,875  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 81%
+18:43:23,065  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:23,887  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 84%
+18:43:26,070  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:26,900  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 87%
+18:43:29,076  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:29,913  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 90%
+18:43:32,076  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:32,925  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 93%
+18:43:35,080  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:35,935  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 95%
+18:43:38,086  INFO communication thread LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:38,949  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 98%
+18:43:39,950  INFO Thread-12 Task:done:995 - Task:attempt_local17787423_0001_r_000000_0 is done. And is in the process of committing
+18:43:39,952  INFO Thread-12 LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:39,952  INFO Thread-12 Task:commit:1156 - Task attempt_local17787423_0001_r_000000_0 is allowed to commit now
+18:43:39,953  INFO Thread-12 FileOutputCommitter:commitTask:439 - Saved output of task 'attempt_local17787423_0001_r_000000_0' to file:/Users/suannai/Desktop/MatrixMultiply-master/output/_temporary/0/task_local17787423_0001_r_000000
+18:43:39,953  INFO Thread-12 LocalJobRunner:statusUpdate:513 - reduce > reduce
+18:43:39,953  INFO Thread-12 Task:sendDone:1115 - Task 'attempt_local17787423_0001_r_000000_0' done.
+18:43:39,954  INFO main Job:monitorAndPrintJob:1345 -  map 100% reduce 100%
+18:43:40,960  INFO main Job:monitorAndPrintJob:1356 - Job job_local17787423_0001 completed successfully
+18:43:40,968  INFO main Job:monitorAndPrintJob:1363 - Counters: 24
+	File System Counters
+		FILE: Number of bytes read=3528984058
+		FILE: Number of bytes written=4944177338
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=54855
+		Map output records=54855000
+		Map output bytes=823480950
+		Map output materialized bytes=933190962
+		Input split bytes=244
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1000000
+		Reduce shuffle bytes=0
+		Reduce input records=54855000
+		Reduce output records=999606
+		Spilled Records=170896649
+		Shuffled Maps =0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=426
+		Total committed heap usage (bytes)=2983723008
+	File Input Format Counters 
+		Bytes Read=610095
+	File Output Format Counters 
+		Bytes Written=13922921
