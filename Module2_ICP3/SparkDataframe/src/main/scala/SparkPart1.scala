@@ -39,15 +39,15 @@ object SparkPart1 {
     treatment.show()
 
     //TASK2-1
-    // val df3=df.select("Country", "state","Age","Gender","Timestamp")
-    //  val df4=df.select("Country","treatment","family_history","no_employees")
-    //df3.createOrReplaceTempView("df3")
-    // df4.createOrReplaceTempView("df4")
-    //val Join1=sqlContext.sql("select df3.Gender,df3.Age,df4.family_history,df4.treatment FROM df3,df4 where df3.Country=df4.Country ")
-    //Join1.show(numRows = 50)
+     val df3=df.select("Country", "state","Age","Gender","Timestamp")
+     val df4=df.select("Country","treatment","family_history","no_employees")
+    df3.createOrReplaceTempView("df3")
+     df4.createOrReplaceTempView("df4")
+    val Join1=sqlContext.sql("select df3.Gender,df3.Age,df4.family_history,df4.treatment FROM df3,df4 where df3.Country=df4.Country ")
+    Join1.show(numRows = 50)
 
-    // val Join2=sqlContext.sql("select df3.*, df4.* FROM df3 INNER JOIN df4 ON(df3.Country=df4.Country)")
-    //Join2.show(numRows = 10)
+     val Join2=sqlContext.sql("select df3.*, df4.* FROM df3 INNER JOIN df4 ON(df3.Country=df4.Country)")
+    Join2.show(numRows = 10)
     //Aggregate functions
 
     val avgage = sqlContext.sql("SELECT Avg(Age) as AverageAge FROM survey")
@@ -64,9 +64,9 @@ object SparkPart1 {
     import spark.implicits._
     def parseLine(line: String): (String, String, String) = {
       val rows = line.split(",")
-      val age = rows(2).toString
-      val state = rows(5).toString
-      val gender = rows(3).toString
+      val age = rows(1).toString
+      val state = rows(4).toString
+      val gender = rows(2).toString
       (age, state, gender)
     }
     val bonus = sc.textFile("/Users/suannai/survey.csv")
